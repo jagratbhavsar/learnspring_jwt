@@ -1,0 +1,48 @@
+White Paper: Improving Payment Return Process Using NLP
+1. Executive Summary
+1.1 Business Challenges
+ABC IN serves as a critical component of ABC Banks Group for USD settlement in cross-border payments, acting as an intermediary through SWIFT and local payment schemes. The current process for handling payment returns is manual, processing around 0.5% of the total daily volume, which amounts to approximately 1000 transactions each day. This process requires 10 FTEs (Full-Time Equivalents) and is inefficient due to the lack of Straight Through Processing (STP) capabilities. This impacts operational efficiency, adds technical debt, and strains resources.
+1.2 Assignment
+The task is to analyze the existing payment return process and use Natural Language Processing (NLP) to identify the top 10 reasons for payment returns. The aim is to present these findings to stakeholders, demonstrating opportunities for reducing manual effort.
+1.3 Proposed Solution
+The solution involves using Natural Language Processing (NLP) techniques to analyze payment return comments and identify the key reasons behind these returns. The steps of the proposed solution include:
+1. Data Collection: Gathered sample payment return data in CSV format.
+2. Data Preprocessing: Cleaned and normalized text data, and tokenized the text.
+3. Data Transformation & Embedding: Used word embeddings for numerical representation.
+4. Model Selection & Training: Built an LSTM model using 60% training data, 20% validation, and 20% testing.
+5. Model Architecture: LSTM Layer, Dense Layer (ReLU), and Dense Layer (Softmax).
+6. Model Evaluation: Evaluated using precision, recall, and F1-score.
+7. Output Generation: Categorized return comments and displayed analytical charts.
+8. Interpretation of Results: Analyzed top 10 categories and prepared a summary.
+1.4 Assumptions
+1. The analysis uses sample data, with the expectation that results will align with real production data.
+2. Access to real data will require proper approvals and security measures.
+3. Stakeholders have a basic understanding of NLP and machine learning concepts to interpret the results.
+2. How did we approach to the problem
+The approach involved several steps:
+- Challenge Identification: Recognized gaps between the team and stakeholders, including time zone differences and data access requirements.
+- Domain Knowledge Acquisition: Engaged in discussions with various teams to understand the payment return process.
+- Data Collection: Obtained sample data in CSV format for analysis.
+- NLP Application: Implemented data loading, tokenization, and embedding, followed by an LSTM model.
+- Model Evaluation: Used training, validation, and test data for accuracy.
+3. Findings
+1. Identified common patterns in reasons for payment returns.
+2. Derived top 10 categories from return comments using the model.
+3. Analytical charts provide visual insights into the frequency of each reason.
+4. Business Impact
+- Operational Efficiency: Insights are expected to reduce manual handling by up to 50%, potentially saving 5 FTEs.
+- Cost Reduction: Lower operational costs with reduced manual processing.
+- Enhanced Customer Satisfaction: Improved turnaround times for payment returns.
+- Strategic Advantage: Helps maintain ABC Bank's competitive edge in the global market.
+5. Conclusion
+The PoC demonstrated that using NLP to analyze payment return comments can significantly enhance understanding of the reasons behind payment returns. By categorizing these returns into the top 10 trends, the analysis offers actionable insights for streamlining operations. This approach lays the groundwork for a more automated and efficient payment return process, aligned with industry best practices.
+6. Next Steps
+1. Data Access Approval: Obtain necessary approvals for accessing real production data.
+2. Expand NLP Model: Refine the model using a larger dataset for better accuracy.
+3. Automation Integration: Integrate the model’s output into existing payment operations.
+4. Stakeholder Engagement: Present findings and discuss implementation strategies.
+5. Pilot Implementation: Validate the results with real-time data before full deployment.
+7. References
+1. Lakshmi25Npathi, Sentiment Analysis of IMDB Movie Reviews, Kaggle. Available at: https://www.kaggle.com/code/lakshmi25npathi/sentiment-analysis-of-imdb-movie-reviews
+2. Documentation on NLP techniques and LSTM model applications.
+3. Internal discussions and data provided by ABC Banks Group’s payment operations team.
